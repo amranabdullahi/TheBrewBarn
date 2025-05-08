@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct RewardItemView: View {
+    var title: String
+    var points: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            Text(title)
+                .fontWeight(.medium)
+            Spacer()
+            Text(points)
+                .foregroundColor(.brown)
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(8)
+        .shadow(radius: 1)
     }
 }
 
 #Preview {
-    RewardItemView()
+    RewardItemView(title: "", points: "")
 }

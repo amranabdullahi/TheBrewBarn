@@ -9,7 +9,27 @@ import SwiftUI
 
 struct ContactView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image("contactbg")
+                .resizable()
+                .scaledToFill()
+                .frame(minWidth: 0)
+                .edgesIgnoringSafeArea(.all)
+//            VStack {
+//                Text("Contact Us")
+//                    .font(.title)
+//                
+//                    .padding()
+//                
+//                
+//                Text("Phone: (614)207-0667\n\nEmail: info@thebrewbarn.com")
+//                    .font(.body)
+//                    .multilineTextAlignment(.center)
+//                Spacer()
+//            }
+//            .navigationTitle(Text("Contact Us"))
+//            
+        }
     }
 }
 
